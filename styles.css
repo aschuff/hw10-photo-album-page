@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.pageContainter{
+  margin: 0 auto;
+  width: 100%;
+}
+header{
+  text-align: center;
+  font-size: 45px;
+}
+.hidden {
+  display: none;
+}
+.row1, .row2{
+  display: flex;
+  width: 100%;
+}
+img{
+  display: flex;
+  width: 33%;
+}
+aside {
+  width: 18%;
+  background-color: lightblue;
+}
+ul {
+  list-style-type: none;
+}
