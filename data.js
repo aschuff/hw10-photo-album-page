@@ -1,187 +1,187 @@
 var albums = [
   {
-    id: '',
-    title: "Album 1",
-    cover:'',
+    id: 'theBahamas',
+    title: "The Bahamas",
+    cover:'images/bahamaslighthouse.jpg',
     pictures: [
         {
-        caption: '',
-        photo: '',
+        caption: 'lighthouse',
+        photo: 'images/bahamaslighthouse.jpg',
       },
       {
-        caption: '',
-        photo: '',
+        caption: 'lighthouse',
+        photo: 'images/bahamaslighthouse.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'lighthouse',
+        photo: 'images/bahamaslighthouse.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'lighthouse',
+        photo: 'images/bahamaslighthouse.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'lighthouse',
+        photo: 'images/bahamaslighthouse.jpg',
       },
       {
-        caption: '',
-        photo: ''
+        caption: 'lighthouse',
+        photo: 'images/bahamaslighthouse.jpg',
       }
     ]
   },
   {
-    id: '',
-    title: "Album 2",
-    cover:'',
+    id: 'theMountains',
+    title: "Hiawassee, GA",
+    cover:'images/mountains.jpg',
     pictures: [
         {
-        caption: '',
-        photo: '',
+        caption: 'themountains',
+        photo: 'images/mountains.jpg',
       },
       {
-        caption: '',
-        photo: '',
+        caption: 'themountains',
+        photo: 'images/mountains.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'themountains',
+        photo:'images/mountains.jpg' ,
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'themountains',
+        photo: 'images/mountains.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'themountains',
+        photo: 'images/mountains.jpg',
       },
       {
-        caption: '',
-        photo: ''
+        caption: 'themountains',
+        photo: 'images/mountains.jpg',
       }
     ]
   },
   {
-    id: '',
-    title: "Album 3",
-    cover:'',
+    id: 'charleston',
+    title: "Around Charleston",
+    cover:'images/charleston1.jpg',
     pictures: [
         {
-        caption: '',
-        photo: '',
+        caption: 'charleston',
+        photo: 'images/charleston1.jpg',
       },
       {
-        caption: '',
-        photo: '',
+        caption: 'charleston',
+        photo: 'images/charleston1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'charleston',
+        photo: 'images/charleston1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'charleston',
+        photo: 'images/charleston1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'charleston',
+        photo: 'images/charleston1.jpg',
       },
       {
-        caption: '',
-        photo: ''
+        caption: 'charleston',
+        photo: 'images/charleston1.jpg',
       }
     ]
   },
   {
-    id: '',
-    title: "Album 4",
-    cover:'',
+    id: 'pa',
+    title: "Pennsylvania",
+    cover:'images/philly1.jpg',
     pictures: [
         {
-        caption: '',
-        photo: '',
+        caption: 'PA',
+        photo: 'images/philly1.jpg',
       },
       {
-        caption: '',
-        photo: '',
+        caption: 'PA',
+        photo: 'images/philly1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'PA',
+        photo: 'images/philly1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'PA',
+        photo: 'images/philly1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'PA',
+        photo: 'images/philly1.jpg',
       },
       {
-        caption: '',
-        photo: ''
+        caption: 'PA',
+        photo: 'images/philly1.jpg',
       }
     ]
   },
   {
-    id: '',
-    title: "Album 5",
-    cover:'',
+    id: 'newyork',
+    title: "New York",
+    cover:'images/newyork1.jpg',
     pictures: [
         {
-        caption: '',
-        photo: '',
+        caption: 'NYC',
+        photo: 'images/newyork1.jpg',
       },
       {
-        caption: '',
-        photo: '',
+        caption: 'NYC',
+        photo: 'images/newyork1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'NYC',
+        photo: 'images/newyork1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'NYC',
+        photo: 'images/newyork1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'NYC',
+        photo: 'images/newyork1.jpg',
       },
       {
-        caption: '',
-        photo: ''
+        caption: 'NYC',
+        photo: 'images/newyork1.jpg',
       }
     ]
   },
   {
-    id: '',
-    title: "Album 6",
-    cover:'',
+    id: 'dc',
+    title: "D.C.",
+    cover:'images/dc1.jpg',
     pictures: [
         {
-        caption: '',
-        photo: '',
+        caption: 'DC',
+        photo: 'images/dc1.jpg',
       },
       {
-        caption: '',
-        photo: '',
+        caption: 'DC',
+        photo: 'images/dc1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'DC',
+        photo: 'images/dc1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'DC',
+        photo: 'images/dc1.jpg',
       },
       {
-        caption: '',
-        photo: ,
+        caption: 'DC',
+        photo: 'images/dc1.jpg',
       },
       {
-        caption: '',
-        photo: ''
+        caption: 'DC',
+        photo: 'images/dc1.jpg',
       }
     ]
   },

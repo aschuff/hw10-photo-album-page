@@ -1,14 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #72DCE8;
 }
-.pageContainter{
+div.pageContainter{
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
+
 }
-header{
+header div{
   text-align: center;
-  font-size: 45px;
+  font-size: 30px;
+  background-color: #FF925A;
+  border: solid 3% #E8DFC4;
+  font-family: 'Raleway', sans-serif;
 }
 .hidden {
   display: none;
@@ -19,12 +24,19 @@ header{
 }
 img{
   display: flex;
-  width: 33%;
+  width: 25%;
 }
 aside {
   width: 18%;
-  background-color: lightblue;
+  background-color: #E8DFC4;
 }
 ul {
   list-style-type: none;
+  font-family: 'Raleway', sans-serif;
+}
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+section.albums {
+  display: inline-flex;
 }
