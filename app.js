@@ -1,15 +1,15 @@
 $(document).ready(function (){
-// put the albums on the page
+// puts the albums on the page
   var albumsString = '';
   albums.forEach(function (item, idx, arr){
     albumsString += `<div class="album" data-id="${item.id}">
-                    <h3>${item.title}</h3>
                     <img src="${item.cover}" alt="">
+                    <h3>${item.title}</h3>
                     </div>`;
   })
     $('.albums').html(albumsString);
 
-// when the album is clicked, the pictures are displayed
+// when the album is clicked, the pictures are displayed and the album is hidden
     $('.albums').on('click', '.album', function(event) {
         event.preventDefault();
         console.log($(this).data('id'));
@@ -20,24 +20,24 @@ $(document).ready(function (){
       var photosString = '';
         chosenAlbum[0].pictures.forEach(function(item, idx, arr){
           photosString += `<div class="photo">
-                          <h3>${item.caption}</h3>
                           <img src="${item.photo}" alt="">
+                          <h3>${item.caption}</h3>
                           </div>`
       });
       $('.albumThumbnails').html(photosString);
-
       $('.albumThumbnails').addClass('active');
       $('.albums').hide();
-
     })
 
-// creates the list items and takes you back to the album page
+// creates the list items
     var places = albums.map(function(item, idx, arr){
       return "<li>" + item.title + "</li>"
     })
+  // lists the list items and puts them in the sidebar as part of the html
       places.forEach(function(item, idx,arr){
         return $('.sidebar').html(places)
       })
+  //on the click of the list item, it takes you to the correct pictures in the album
     $('li').on('click', function (event) {
       event.preventDefault();
       var clickedListItem = $(this).text();
@@ -63,4 +63,43 @@ $(document).ready(function (){
       $(this).siblings().hide();
       // $(this).css('background-color','red');
 });
+// making the picture big
+
+var chosenBigPhoto =
+  albums.filter(function(item, idx, arr){
+    return item.photo
+  })
+  // chosenBigPhoto.filter(function(item, idx, arr){
+  //   return
+    // $('.photoZoom').html(chosenBigPhoto);
+  // })
+$('.albumThumbnails').on('click', '.photo', function(event) {
+    event.preventDefault();
+    console.log($(this).data('id'));
+    var photoId = $(this).data('id');
+    var chosenPhoto = albums.filter(function (item, idx, arr){
+      return item.photo === photoId;
+  })
+  var photosBig = '';
+    chosenPhoto[0].pictures.forEach(function(item, idx, arr){
+      photosBig += `<div class="largePhoto">
+                      <img src="${item.photo}" alt="">
+                      <h3>${item.caption}</h3>
+                      </div>`
+  });
+  $('.photoZoom').html(photosBig);
+  $('.photoZoom').addClass('active');
+  $('.albumThumbnails').hide();
+  $('.sidebar').hide();
+  $('.albums').hide();
+
+})
+
+// header takes you home
+  $('.header').on('click', function (item, idx, arr){
+    $('.albums').removeClass('hidden');
+    $('.albumThumbnails').addClass('hidden');
+    $('.sidebar').addClass('active')
+  })
+
 })

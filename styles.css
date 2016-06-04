@@ -1,42 +1,59 @@
+
 body {
-  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 0;
-  background-color: #72DCE8;
+  background-color: #266681;
 }
-div.pageContainter{
+div.pageContainter {
   margin: 0 auto;
   width: 80%;
-
+  border: dashed antiquewhite;
+  background-color: #329AAC;
 }
 header div{
   text-align: center;
   font-size: 30px;
-  background-color: #FF925A;
-  border: solid 3% #E8DFC4;
+  background-color: #D2B112;
   font-family: 'Raleway', sans-serif;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
+h1 {
+  border: antiquewhite dashed;
+  color: antiquewhite;
 }
 .hidden {
   display: none;
 }
-.row1, .row2{
-  display: flex;
-  width: 100%;
-}
-img{
-  display: flex;
-  width: 25%;
-}
 aside {
-  width: 18%;
-  background-color: #E8DFC4;
+  width: 13%;
+  height: 9em;
+  background-color: #D2B112;
+  margin-right: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: antiquewhite;
+  border: antiquewhite dashed 2px;
 }
-ul {
+li {
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+section {
+  display: inline-flex;
+  width: 90%;
+}
+.album {
+  width: 115%;
+}
+img{
+  width: 15em;
+  margin-left: 20%;
 }
 h3 {
   font-family: 'Ubuntu', sans-serif;
-}
-section.albums {
-  display: inline-flex;
 }

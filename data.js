@@ -1,6 +1,6 @@
 var albums = [
   {
-    id: 'theBahamas',
+    id: 'The Bahamas',
     title: "The Bahamas",
     cover:'images/bahamaslighthouse.jpg',
     pictures: [
@@ -31,7 +31,7 @@ var albums = [
     ]
   },
   {
-    id: 'theMountains',
+    id: 'Hiawassee, GA',
     title: "Hiawassee, GA",
     cover:'images/mountains.jpg',
     pictures: [
@@ -62,7 +62,7 @@ var albums = [
     ]
   },
   {
-    id: 'charleston',
+    id: 'Around Charleston',
     title: "Around Charleston",
     cover:'images/charleston1.jpg',
     pictures: [
@@ -93,7 +93,7 @@ var albums = [
     ]
   },
   {
-    id: 'pa',
+    id: 'Pennsylvania',
     title: "Pennsylvania",
     cover:'images/philly1.jpg',
     pictures: [
@@ -124,7 +124,7 @@ var albums = [
     ]
   },
   {
-    id: 'newyork',
+    id: 'New York',
     title: "New York",
     cover:'images/newyork1.jpg',
     pictures: [
@@ -155,7 +155,7 @@ var albums = [
     ]
   },
   {
-    id: 'dc',
+    id: 'D.C.',
     title: "D.C.",
     cover:'images/dc1.jpg',
     pictures: [
