@@ -61,40 +61,15 @@ $('li').on('click', function (event) {
      $('.photo').on('click',function (event) {
        console.log(this);
        $(this).siblings().hide();
-       // $(this).css('background-color','red');
  });
 });
-
-// making the picture big
-
-// $('.photo').on('click', function(event) {
-//     event.preventDefault();
-//     console.log($(this).data('id'));
-//
-//     var chosenPhoto = albums.filter(function (item, idx, arr){
-//       return
-//       $(this).find('img').attr('src');
-//         $('.photoZoom').attr('src',chosenPhoto);
-//         $(this).siblings().hide();
-//
-//   $('.photoZoom').html(photosString)
-//   $('.photoZoom').addClass('active');
-//   $(this).siblings().hide();
-//   $('.sidebar').hide();
-//
-// })
-// })
+// hides all other pages and shows a single image
 var chosenBigPhoto =
   albums.filter(function(item, idx, arr){
     return item.photo
   })
-  // chosenBigPhoto.filter(function(item, idx, arr){
-  //   return
-    // $('.photoZoom').html(chosenBigPhoto);
-  // })
 $('.albumThumbnails').on('click', '.photo', function(event) {
     event.preventDefault();
-    // console.log($(this).data('id'));
     var photoId = $(this).data('id');
     var chosenPhoto = albums.filter(function (item, idx, arr){
       return item.photo === photoId;
@@ -108,8 +83,8 @@ $('.albumThumbnails').on('click', '.photo', function(event) {
 
   });
   $('.photoZoom').html(photosBig);
-  $('.photoZoom').addClass('active');
-  $('.photo').siblings().hide();
+  $('.photoZoom').addClass('hidden');
+  $(this).siblings().hide();
   $('.sidebar').hide();
   $('.albums').hide();
 
@@ -118,7 +93,7 @@ $('.albumThumbnails').on('click', '.photo', function(event) {
 // header takes you home
   $('.header').on('click', function (item, idx, arr){
     $('.albums').addClass('active');
-    $('.albumThumbnails').siblings().hide();
+    // $('.albumThumbnails').hide();
     $('.sidebar').addClass('active')
-    $('.photoZoom').addClass('hidden');
+    $('.photoZoom').hide();
   })
