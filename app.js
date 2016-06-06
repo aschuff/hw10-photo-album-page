@@ -41,27 +41,27 @@ albums.forEach(function (item, idx, arr){
 $('li').on('click', function (event) {
        event.preventDefault();
        var clickedListItem = $(this).text();
-       console.log($(this).text());
+      //  console.log($(this).text());
 
        var chosenAlbum = albums.filter(function (item, idx, arr){
-         return item.title === clickedListItem;
+         return item.id === clickedListItem;
        })
      var photosString = '';
        chosenAlbum[0].pictures.forEach(function(item, idx, arr){
          photosString += `<div class="photo">
-                         <h3>${item.caption}</h3>
-                         <img src="${item.photo}" alt="">
+                          <img src="${item.photo}" alt="">
+                          <h3>${item.caption}</h3>
                          </div>`
      });
      $('.albumThumbnails').html(photosString);
      $('.albumThumbnails').addClass('active');
-     $('.albums').hide()
-     })
+     $('.albums').addClass('hidden');
+   });
 
-     $('.photo').on('click',function (event) {
-       console.log(this);
-       $(this).siblings().hide();
- });
+ //     $('.photo').on('click',function (event) {
+ //       console.log(this);
+ //       $(this).siblings().hide();
+ // });
 // });
 // hides all other pages and shows a single image
 var chosenBigPhoto =
@@ -92,17 +92,29 @@ $('.albumThumbnails').on('click', '.photo', function(event) {
 })
 });
 // header takes you home - doesn't work yet
-  // $('.header').on('click', function (item, idx, arr){
-  //   $('.albums').addClass('active');
-  //   // $('.albumThumbnails').hide();
-  //   $('.sidebar').addClass('active')
-  //   $('.photoZoom').hide();
+//   $('.header').on('click', function (event){
+//     event.preventDefault();
+//     console.log($(this));
+//     $('.albums').addClass('active');
+//     // $('.albumThumbnails').addClass('hidden'));
+//     $('.sidebar').addClass('active')
+// });
 
 // back to home button - doesn't work yet
-// $('.home').on('click', function (item, idx, arr){
-//   $('.albums').addClass('active');
-//   $('albumThumbnails').hide();
-//   $('.photoZoom').hide()
+// $('input').on('click', function (event){
+//   event.preventDefault();
+//   console.log($(this).text())
+//   var albumsString = '';
+//   albums.forEach(function (item, idx, arr){
+//     albumsString += `<div class="album" data-id="${item.id}">
+//                     <img src="${item.cover}" alt="">
+//                     <h3>${item.title}</h3>
+//                     </div>`;
+//   })
+//   $('.albums').html(albumsString);
+//   $('.albums').removeClass('hidden');
+//   $('albumThumbnails').addClass('hidden');
+//
 // })
 
 // })
