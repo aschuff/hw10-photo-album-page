@@ -62,7 +62,7 @@ $('li').on('click', function (event) {
        console.log(this);
        $(this).siblings().hide();
  });
-});
+// });
 // hides all other pages and shows a single image
 var chosenBigPhoto =
   albums.filter(function(item, idx, arr){
@@ -87,13 +87,22 @@ $('.albumThumbnails').on('click', '.photo', function(event) {
   $(this).siblings().hide();
   $('.sidebar').hide();
   $('.albums').hide();
+  $('.button').hide();
 
 })
+});
+// header takes you home - doesn't work yet
+  // $('.header').on('click', function (item, idx, arr){
+  //   $('.albums').addClass('active');
+  //   // $('.albumThumbnails').hide();
+  //   $('.sidebar').addClass('active')
+  //   $('.photoZoom').hide();
 
-// header takes you home
-  $('.header').on('click', function (item, idx, arr){
-    $('.albums').addClass('active');
-    // $('.albumThumbnails').hide();
-    $('.sidebar').addClass('active')
-    $('.photoZoom').hide();
-  })
+// back to home button - doesn't work yet
+// $('.home').on('click', function (item, idx, arr){
+//   $('.albums').addClass('active');
+//   $('albumThumbnails').hide();
+//   $('.photoZoom').hide()
+// })
+
+// })

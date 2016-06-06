@@ -27,6 +27,17 @@ h1 {
 .hidden {
   display: none;
 }
+input {
+  color: antiquewhite;
+  background-color: #D2B112;
+  font-size: 16px;
+  border: antiquewhite dashed;
+  margin: 4px 0;
+  width: 11.6em;
+}
+input:hover {
+  opacity: .7;
+}
 aside {
   width: 13%;
   height: 15em;
@@ -45,7 +56,7 @@ li {
   text-align: justify;
 }
 li:hover {
-    color: #f88379;
+    opacity: .7;
   }
   section.albums.active {
     display: flex;
@@ -72,13 +83,15 @@ li:hover {
     padding-left: 10em;
   }
   img{
-    min-width: 13em;
+    min-width: 14em;
     max-height: 15em;
     margin-left: 20%;
     border: antiquewhite solid;
     margin: 0 3px;
     border-radius: 36px;
-
+  }
+  img:hover{
+    opacity: .7;
   }
   h3 {
     font-family: 'Raleway', sans-serif;
@@ -92,5 +105,5 @@ li:hover {
     margin-bottom: 20%;
   }
 h3:hover {
-    color: #f88379;
+    opacity: .7;
   }
